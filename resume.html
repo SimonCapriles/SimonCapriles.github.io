@@ -1,106 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Simon Capriles Resume</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
-    <div class="col-12 col-md-12 col-xl-9">
-        <div class="pb-3">
-            <h1 class="title">Resume</h1>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Simon Capriles´s web resume">
+        <meta name="author" content="Simon Capriles, Bootstrap and Fontawesome contributors">
+        <title>Simon Capriles - Resume</title>
+        <!--  Styles  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link href="static/css/cover.css" rel="stylesheet">
+    </head>
+    <body class="text-center" style="background: url(static/images/simon_home_cover.jpg) no-repeat center center fixed;">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="masthead mb-auto">
+                <div class="inner">
+                    <h3 class="masthead-brand">Resume</h3>
+                    <nav class="nav nav-masthead justify-content-center">
+                        <a class="nav-link" href="about.html">Home</a>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link active" href="resume.html">Resume</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div class="col-12">
+                    <div class="box shadow pb-0" style="background-color: dimgray; border-radius: 2%;">
+                        <div class="pb-1">
+                            <h1 class="title">Resume</h1>
+                        </div>
 
-        <div class="pb-0">
-            <div class="row">
-                <div class="col-6 col-lg-6">
-                    <h2 class="title"><img class="tite-icon" alt="Education" src="static/icons/user-graduate-duotone.svg" height="4%" width="4%"/>Education</h2>
-                    <div class="timeline">
-                        <article>
-                            <h5 class="title">Postgraduate - EMI (Military School of Engineering)</h5>
-                            <span>2017 - 2019</span>
-                            <p>Master in TI security, specialized in secure ERP implementations</p>
-                        </article>
-                        <article>
-                            <h5 class="title">Graduate - EMI (Military School of Engineering)</h5>
-                            <span>2010 - 2014</span>
-                            <p>Industrial Engineering</p>
-                        </article>
-                        <article>
-                            <h5 class="title">Bachelor - San Calixto School</h5>
-                            <span>2000 - 2009</span>
-                            <p>Bachelor in Humanities</p>
-                        </article>
+                        <div class="pb-0">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="accordion" id="accordionResume">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="educationHeading">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducation" aria-expanded="true" aria-controls="collapseEducation">
+                                                    <img class="title-icon" width="auto;" height="50px;" src="static/icons/user-graduate-light.svg" alt="" /><strong style="padding-left: 20px;">Education</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseEducation" class="accordion-collapse collapse" aria-labelledby="educationHeading" data-bs-parent="#accordionResume">
+                                                <div class="accordion-body">
+                                                    <div class="accordion" id="accordionEducation">
+                                                        <div class="accordion-item">
+                                                            <!-- Formal education -->
+                                                            <h3 class="accordion-header" id="formalHeading">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFormalEducation" aria-expanded="true" aria-controls="collapseFormalEducation">
+                                                                    <img class="title-icon" width="50px" height="auto" src="static/icons/graduation-cap-light.svg" alt="" /> <strong style="padding-left: 20px;">Formal education</strong>
+                                                                </button>
+                                                            </h3>
+                                                            <div id="collapseFormalEducation" class="accordion-collapse collapse" aria-labelledby="formalHeading" data-bs-parent="#accordionEducation">
+                                                                <div class="accordion-body" style="text-align: left; color: black;">
+                                                                    <ul style="text-align: left; color: black;">
+                                                                        <li>
+                                                                            <h5 class="title">Postgraduate - EMI (Military School of Engineering)</h5>
+                                                                            <span>2017 - 2019</span>
+                                                                            <p>Master in IT security</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <h5 class="title">Graduate - EMI (Military School of Engineering)</h5>
+                                                                            <span>2010 - 2014</span>
+                                                                            <p>Industrial Engineering</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <h5 class="title">Bachelor - San Calixto School</h5>
+                                                                            <span>2000 - 2009</span>
+                                                                            <p>Bachelor in Humanities</p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <!-- Languages -->
+                                                            <h3 class="accordion-header" id="languagesHeading">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLanguages" aria-expanded="true" aria-controls="collapseLanguages">
+                                                                    <img class="title-icon" width="50px" height="auto" src="static/icons/language-light.svg" alt="" /><strong style="padding-left: 20px;">Languages</strong>
+                                                                </button>
+                                                            </h3>
+                                                            <div id="collapseLanguages" class="accordion-collapse collapse" aria-labelledby="languagesHeading" data-bs-parent="#accordionEducation">
+                                                                <div class="accordion-body">
+                                                                    <div style="padding:5px;">
+                                                                        <div class="progress">
+                                                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                                                <div class="progress-text" style="text-align: center; padding-left: 5px; font-weight: bold;"><span>Spanish: 100%</span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div style="padding: 5px;">
+                                                                        <div class="progress">
+                                                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                                                <div class="progress-text" style="text-align: center; padding-left: 5px; font-weight: bold;"><span>English: 90%</span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div style="padding: 5px;">
+                                                                        <div class="progress">
+                                                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                                                <div class="progress-text" style="text-align: center; padding-left: 5px; font-weight: bold;"><span>Japanese: 70%</span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <!-- Skills -->
+                                                            <div class="accordion" id="accordionResumeSkills">
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="skillsHeading">
+                                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkills" aria-expanded="true" aria-controls="collapseSkills">
+                                                                            <img class="title-icon" width="auto" height="40px" src="static/icons/file-certificate-light.svg" alt="" /> <strong style="padding-left: 20px;">Skills</strong>
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="collapseSkills" class="accordion-collapse collapse" aria-labelledby="skillsHeading" data-bs-parent="#accordionResumeSkills">
+                                                                        <div class="accordion-body" style="text-align: left; color: black;">
+                                                                            <div class="accordion" id="accordionSkills">
+                                                                                <div class="accordion-item">
+                                                                                    <!-- Programing Skills -->
+                                                                                    <h3 class="accordion-header" id="programingSkillsHeading">
+                                                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProgramingSkills" aria-expanded="true" aria-controls="collapseProgramingSkills">
+                                                                                            <img class="title-icon" width="auto" height="45px" src="static/icons/file-code-light.svg" alt="" /> <strong style="padding-left: 20px;">Programing skills</strong>
+                                                                                        </button>
+                                                                                    </h3>
+                                                                                    <div id="collapseProgramingSkills" class="accordion-collapse collapse" aria-labelledby="programingSkillsHeading" data-bs-parent="#accordionEducation">
+                                                                                        <div class="accordion-body" style="text-align: left; color: black;">
+                                                                                            <div style="padding:5px;">
+                                                                                                <div class="progress">
+                                                                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                                                                        <div class="progress-text" style="text-align: center; padding-left: 5px; font-weight: bold;"><span>Python: 90%</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div style="padding:5px;">
+                                                                                                <div class="progress">
+                                                                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                                                                        <div class="progress-text" style="text-align: center; padding-left: 5px; font-weight: bold;"><span>Javascript: 70%</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div style="padding:5px;">
+                                                                                                <div class="progress">
+                                                                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                                                                                        <div class="progress-text" style="text-align: center; padding-left: 5px; font-weight: bold;"><span>C#: 30%</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div style="padding:5px;">
+                                                                                                <div class="progress">
+                                                                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                                                                        <div class="progress-text" style="text-align: center; padding-left: 5px; font-weight: bold;"><span>HTML: 80%</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div style="padding:5px;">
+                                                                                                <div class="progress">
+                                                                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                                                                        <div class="progress-text" style="text-align: center; padding-left: 5px; font-weight: bold;"><span>CSS: 60%</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="accordion-item">
+                                                                                    <!-- Other Skills -->
+                                                                                    <h3 class="accordion-header" id="otherSkillsHeading">
+                                                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOtherSkills" aria-expanded="true" aria-controls="collapseOtherSkills">
+                                                                                            <img class="title-icon" width="auto" height="40px" src="static/icons/portal-exit-light.svg" alt="" /><strong style="padding-left: 20px;">Other skills</strong>
+                                                                                        </button>
+                                                                                    </h3>
+                                                                                    <div id="collapseOtherSkills" class="accordion-collapse collapse" aria-labelledby="otherSkillsHeading" data-bs-parent="#accordionEducation">
+                                                                                        <div class="accordion-body" style="text-align: left; color: black;">
+                                                                                            <div style="padding:5px;">
+                                                                                                <div class="progress">
+                                                                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                                                                        <div class="progress-text" style="text-align: center; padding-left: 5px; font-weight: bold;"><span>Arduino and Raspberry: 70%</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div style="padding:5px;">
+                                                                                                <div class="progress">
+                                                                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                                                                        <div class="progress-text" style="text-align: center; padding-left: 5px; font-weight: bold;"><span>Microsoft Office: 90%</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div style="padding:5px;">
+                                                                                                <div class="progress">
+                                                                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                                                                        <div class="progress-text" style="text-align: center; padding-left: 5px; font-weight: bold;"><span>3D printing: 80%</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div style="padding:5px;">
+                                                                                                <div class="progress">
+                                                                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                                                                        <div class="progress-text" style="text-align: center; padding-left: 5px; font-weight: bold;"><span>SolidWorks: 60%</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="experienceHeading">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExperience" aria-expanded="false" aria-controls="collapseExperience">
+                                                    <img class="title-icon" width="50px;" height="auto;" src="static/icons/briefcase-light.svg" alt="" /><strong style="padding-left: 20px;">Experience</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseExperience" class="accordion-collapse collapse" aria-labelledby="experienceHeading" data-bs-parent="#accordionResume">
+                                                <div class="accordion-body">
+                                                    <div class="accordion" id="accordionJobs">
+                                                        <div class="accordion-item">
+                                                            <!-- First Job -->
+                                                            <h3 class="accordion-header" id="firstJobHeading">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFirstJob" aria-expanded="false" aria-controls="collapseFirstJob">
+                                                                    <img class="title-icon" width="40px;" height="auto" src="static/icons/ram-light.svg" alt="" /><strong style="padding-left: 20px;">Brangus Leather Corp.</strong>
+                                                                </button>
+                                                            </h3>
+
+                                                            <div id="collapseFirstJob" class="accordion-collapse collapse" aria-labelledby="firstJobHeading" data-bs-parent="#accordionJobs">
+                                                                <div class="accordion-body" style="text-align: left; color: black;">
+                                                                    <strong>Company description:</strong> Garment sheep leather manufacturing industry<br/>
+                                                                    <strong>Position:</strong> Production chief: 2014 - 2015<br/>
+                                                                    <strong>Responsibilities:</strong>
+                                                                    <ul>
+                                                                        <li>Production planning</li>
+                                                                        <li>Quality control</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <!-- Second Job -->
+                                                            <h3 class="accordion-header" id="secondJobHeading">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondJob" aria-expanded="false" aria-controls="collapseSecondJob">
+                                                                    <img class="title-icon" width="auto" height="40px;" src="static/icons/lightbulb-light.svg" alt="" /><strong style="padding-left: 20px;">Witronix Led / PFM S.R.L.</strong>
+                                                                </button>
+                                                            </h3>
+
+                                                            <div id="collapseSecondJob" class="accordion-collapse collapse" aria-labelledby="secondJobHeading" data-bs-parent="#accordionJobs">
+                                                                <div class="accordion-body" style="text-align: left; color: black;">
+                                                                    <strong>Company description:</strong> Led luminary manufacturing industry<br/>
+                                                                    <strong>Position:</strong> Production director: 2016 - 2017<br/>
+                                                                    <strong>Responsibilities:</strong>
+                                                                    <ul>
+                                                                        <li>Logistics</li>
+                                                                        <li>Production planning</li>
+                                                                        <li>Warehouse management</li>
+                                                                        <li>Quality control</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <!-- Third Job -->
+                                                            <h3 class="accordion-header" id="thirdJobHeading">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirdJob" aria-expanded="false" aria-controls="collapseThirdJob">
+                                                                    <img class="title-icon" width="40px;" height="auto" src="static/icons/user-chart-light.svg" alt="" /><strong style="padding-left: 20px;">Poiesis Consulting Group</strong>
+                                                                </button>
+                                                            </h3>
+
+                                                            <div id="collapseThirdJob" class="accordion-collapse collapse" aria-labelledby="thirdJobHeading" data-bs-parent="#accordionJobs">
+                                                                <div class="accordion-body" style="text-align: left; color: black;">
+                                                                    <strong>Company description:</strong> ERP implementation business<br/>
+                                                                    <strong>Position:</strong> ERP Consultant: 2017 - 2018<br/>
+                                                                    <strong>Responsibilities:</strong>
+                                                                    <ul>
+                                                                        <li>Odoo ERP implementation</li>
+                                                                        <li>User trainer</li>
+                                                                        <li>Development QA</li>
+                                                                        <li>Manual and guide documentation</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <!-- Fourth Job -->
+                                                            <h3 class="accordion-header" id="fourthJobHeading">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourthJob" aria-expanded="false" aria-controls="collapseFourthJob">
+                                                                    <img class="title-icon" width="auto" height="40px;" src="static/icons/flask-light.svg" alt="" /><strong style="padding-left: 20px;">Life Technologies Bolivia / Implelab S.R.L. and Labogen S.R.L.</strong>
+                                                                </button>
+                                                            </h3>
+
+                                                            <div id="collapseFourthJob" class="accordion-collapse collapse" aria-labelledby="fourthJobHeading" data-bs-parent="#accordionJobs">
+                                                                <div class="accordion-body" style="text-align: left; color: black;">
+                                                                    <strong>Company description:</strong> Clinical laboratories and laboratory equipment commercialization company<br/>
+                                                                    <strong>Position:</strong> ERP Counsellor: 2018 - 2019<br/>
+                                                                    <strong>Responsibilities:</strong>
+                                                                    <ul>
+                                                                        <li>System administrator</li>
+                                                                        <li>User trainer</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <!-- Fifth Job -->
+                                                            <h3 class="accordion-header" id="fifthJobHeading">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifthJob" aria-expanded="false" aria-controls="collapseFifthJob">
+                                                                    <img class="title-icon" width="40px;" height="auto" src="static/icons/phone-laptop-light.svg" alt="" /><strong style="padding-left: 20px;">Kyohei Ltda.</strong>
+                                                                </button>
+                                                            </h3>
+
+                                                            <div id="collapseFifthJob" class="accordion-collapse collapse" aria-labelledby="fifthJobHeading" data-bs-parent="#accordionJobs">
+                                                                <div class="accordion-body" style="text-align: left; color: black;">
+                                                                    <strong>Company description:</strong> Information technologies implementation and information security services<br/>
+                                                                    <strong>Position:</strong> Owner: 2019 - present<br/>
+                                                                    <strong>Responsibilities:</strong>
+                                                                    <ul>
+                                                                        <li>ERP system implementation</li>
+                                                                        <li>Software solution development</li>
+                                                                        <li>Quality assurance</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-lg-6">
-                    <h2 class="title"><img class="tite-icon" alt="Work experience" src="static/icons/briefcase-duotone.svg" height="4%" width="4%"/>Experience</h2>
-                    <div class="timeline">
-                        <article>
-                            <h3 class="title">Brangus Leather Corp.</h3>
-                            <p>Garment sheep leather manufacturing industry</p>
-                            <h4>Production chief: 2014 - 2015</h4>
-                            <span>Responsibilities:</span>
-                            <ul>
-                                <li>Production planning</li>
-                                <li>Quality control</li>
-                            </ul>
-                        </article>
-                        <article>
-                            <h3 class="title">Witronix Led / PFM S.R.L.</h3>
-                            <p>Led luminary manufacturing industry</p>
-                            <h4>Production director: 2014 - 2015</h4>
-                            <ul>
-                                <li>Logistics</li>
-                                <li>Production planning</li>
-                                <li>Warehouse management</li>
-                                <li>Quality control</li>
-                            </ul>
-                        </article>
-                        <article>
-                            <h5 class="title">Poiesis Consulting Group</h5>
-                            <p>ERP implementation business</p>
-                            <h4>ERP Consultant: 2017 - 2018</h4>
-                            <ul>
-                                <li>Odoo ERP implementation</li>
-                                <li>User trainer</li>
-                                <li>Development QA</li>
-                                <li>Manual and guide documentation</li>
-                            </ul>
-                        </article>
-                        <article>
-                            <h5 class="title">Labogen S.R.L.</h5>
-                            <p>Clinical laboratories</p>
-                            <h4>ERP Counsellor: 2018 - 2019</h4>
-                            <ul>
-                                <li>System administrator</li>
-                                <li>User trainer</li>
-                            </ul>
-                        </article>
-                        <article>
-                            <h5 class="title">Implelab S.R.L.</h5>
-                            <p>Laboratory equipment and reagents import</p>
-                            <h4>ERP Counsellor: 2018 - 2019</h4>
-                            <ul>
-                                <li>System administrator</li>
-                                <li>User trainer</li>
-                            </ul>
-                        </article>
-                        <article>
-                            <h5 class="title">Kyohei Ltda.</h5>
-                            <p>Information Technology solutions industry</p>
-                            <h4>Owner: 2019 - Present</h4>
-                            <ul>
-                                <li>Full Stack Developer</li>
-                                <li>Odoo ERP implementation</li>
-                                <li>Odoo developer</li>
-                            </ul>
-                        </article>
-                    </div>
+            </main>
+            <footer class="mastfoot mt-auto">
+                <div class="inner">
+                    <p>2021 <a href="https://kyohei.com.bo">Kyohei Ltda.</a></p>
                 </div>
-            </div>
+            </footer>
         </div>
-    </div>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </body>
 </html>
