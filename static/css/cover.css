@@ -110,3 +110,16 @@ body {
 .mastfoot {
     color: rgba(255, 255, 255, .5);
 }
+
+/*
+ * Tables
+ */
+
+td.description{
+    width: 40%;
+    text-align: left;
+    padding-top: 2em;
+}
+img.gifs{
+    width: 100%
+}
